@@ -1,0 +1,124 @@
+.basket {
+    &_title {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &_box {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
+.shop {
+    position: relative;
+
+    .openShop {
+        transform: translateX(0%);
+        transition: 0.3s ease-in-out;
+    }
+
+    &__box {
+        right: 0;
+        z-index: 999;
+        margin-top: 102px;
+        width: 450px;
+        height: 90vh;
+        padding-top: -40px;
+        padding-bottom: 100px;
+        overflow-y: scroll;
+        scroll-snap-type: none;
+        background: #ffffff;
+        box-shadow: 0 10px 20px #c5c5c5;
+        position: fixed;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.shopbox {
+    // padding: 10px;
+    padding-top: 0;
+    width: 100%;
+
+
+    &__div {
+        padding: 5px;
+        width: 100%;
+        height: 100px;
+        border: 2px solid #dddddd48;
+        box-shadow: 0 0 10px 1px rgb(233, 233, 233);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__img-div {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    &__img {
+        width: 23%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    &__icon {
+        font-size: 25px;
+        color: coral;
+        transition: 0.2s;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        color: #868686;
+    }
+
+    &__price {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .counter-btn {
+            width: 25px;
+            height: 25px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+
+            &:active {
+                background-color: #d0d0d0;
+            }
+        }
+
+        .counter-value {
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
+}
