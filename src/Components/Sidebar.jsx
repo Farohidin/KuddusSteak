@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar_box">
-        <img className="sidebar_box_img" src="./public/logo.png" alt="" />
+        <img className="sidebar_box_img" src="./logo.png" alt="" />
         <ul className="sidebar_box_ul">
           <li><a href='#kahvalti' className="sidebar_box_ul_li">Kahvaltı</a></li>
           <li><a href='#corba' className="sidebar_box_ul_li">Çorbalar</a></li>

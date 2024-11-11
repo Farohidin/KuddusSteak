@@ -45,7 +45,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="menu_box_card" key={product.id}>
       <Link>
-        <img className='menu_img' src={product.imgSrc ? product.imgSrc : "./public/logo.png"} alt={product.name} />
+        <img className='menu_img' src={product.imgSrc ? product.imgSrc : "./logo.png"} alt={product.name} />
       </Link>
       <p className="menu_box_card_price">{product.price} so'm</p>
       <h2 className="menu_box_card_title">{product.name}</h2>
