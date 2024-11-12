@@ -26,9 +26,12 @@
         font-size: 40px;
         cursor: pointer;
         color: #E55A46;
-        @include media (550){
+        @include media (700){
           font-size: 30px;
-          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
         }
         &_sp {
           position: absolute;
@@ -50,18 +53,26 @@
 
   &_box {
     width: 100%;
-
+ 
     &_cards {
       display: flex;
       flex-wrap: wrap;
-      column-gap: 50px;
+      column-gap: 30px;
       row-gap: 20px;
-      justify-content: start;
-      margin-left: 50px;
+      justify-content: center;
+      align-items: center;
       @include media (770) {
-        margin-left: 35px;
         gap: 10px;
         display: flex;
+      margin-left: 10px;
+     } 
+      @include media (700) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+     } 
+      @include media (650) {
+        display: flex;
+        flex-direction: column;
      } 
       @include media (550) {
         margin-left: 25px;
@@ -83,6 +94,9 @@
       position: relative;
       a{
         height: 200px;
+        @include media (700) {
+          height: 115px;
+       } 
         img{
           width: 100%;
           height: 100%;
@@ -93,9 +107,15 @@
       @include media (1000) {
          width: 100%;
          max-width: 250px;
+         margin-bottom: 30;
       } 
       @include media (860) {
          width: 200px;
+         margin-bottom: 20px;
+      } 
+      @include media (450) {
+         width: 150px;
+         margin-bottom: 20px;
       } 
       img {
         width: 250px;
@@ -110,6 +130,7 @@
         }
         @include media (860) {
             width: 200px;
+            height: 100px;
         }
       }
 
@@ -124,6 +145,12 @@
         cursor: pointer;
         border-radius: 10px;
         font-weight: 600;
+        @include media (700) {
+          font-size: 13px;
+       } 
+        @include media (450) {
+          padding: 5px 8px;
+       } 
       }
 
       &_title {
@@ -135,8 +162,8 @@
       @include media (1000) {
         font-size: 20px;
       } 
-      @include media (880) {
-        
+      @include media (450) {
+        font-size: 16px;
       }
     }
 
@@ -154,6 +181,17 @@
           line-height: 20px;  // Matn qatorining balandligini belgilash
           max-height: 40px;  // Matnning maksimal balandligini belgilash (2 qator)
           overflow-y: auto; 
+          &::-webkit-scrollbar-thumb {
+            background-color: rgba(234, 63, 29, 0.908); // Scrollni ushlovchi qismining rangi
+          
+          }
+          &::-webkit-scrollbar{
+            width: 2px;
+          }
+        }
+        @include media (500) {
+          font-size: 13px;  // Matn o'lchamini kichraytirish
+           
         }
       }
 
@@ -161,7 +199,6 @@
         display: flex;
         align-items: center;
         margin: 0 auto;
-        margin-top: 50px;
         background-color: rgb(194, 54, 57);
         padding: 10px 20px;
         border-radius: 10px;
@@ -176,6 +213,13 @@
         @include media (880) {
              margin-top: 20px;
         }
+        @include media (650) {
+             font-size: 15px;
+        }
+        @include media (450) {
+             font-size: 13px;
+             padding: 5px 10px;
+        }
       }
 
       .counter {
@@ -189,9 +233,14 @@
         margin-top: 43px;
         @include media (880) {
           margin-bottom: 5px;
-          margin-top: 0;
+          margin-top: 20px;
           justify-content: center;
           gap: 15px;
+      }
+        @include media (500) {
+          margin-bottom: 5px;
+          margin-top:15px;
+          gap: 10px;
       }
         .counter-btn {
           width: 40px;
@@ -205,6 +254,12 @@
           @include media (880) {
               width: 30px;
               height: 30px;
+              font-size: 18px;
+          }  
+          @include media (500) {
+              width: 20px;
+              height: 20px;
+              font-size: 16px;
           }  
           &:hover {
             background-color: #e0e0e0;

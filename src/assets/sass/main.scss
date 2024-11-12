@@ -19,6 +19,10 @@
       font-size: 30px;   
       padding: 20px 15px;     
     }
+    @include media (700) {
+      font-size: 20px;   
+      padding: 20px 15px;     
+    }
     @include media (550) {
       font-size: 20px;   
         
@@ -36,7 +40,11 @@
     cursor: pointer;
     @include media (860) {
         margin-top: 20px;
-        padding-bottom: 20px;
+        
+   }
+    @include media (500) {
+        margin-top: 5px;
+        font-size: 12px;
    }
 }
 

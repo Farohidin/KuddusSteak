@@ -36,14 +36,24 @@
               padding-top:  30px;
               row-gap: 10px;
         }
+        @include media (700) {
+              padding-right: 10px;
+              padding-left: 10px;
+              padding-top:  20px;
+              row-gap: 10px;
+        }
    
         &_img{
             width: 150px;
             border-radius: 50%;
             cursor: pointer;
-            @include media (900) {
-              width: 100%;
-              max-width: 150px;
+            @include media (700) {
+              width: 100px;
+              height: 100px;
+            } 
+            @include media (550) {
+              width: 80px;
+              height: 80px;
             } 
         }
         &_ul {
@@ -51,7 +61,7 @@
             flex-direction: column;
             row-gap: 10px;
             border-radius: 20px;
-            
+           
             &_li {
               cursor: pointer;
               font-size: 20px;
@@ -69,23 +79,32 @@
                 padding: 5px 10px;
                 width: 150px;
               }
-              @include media (500) {
+              @include media (550) {
+                padding-right: 10px;
+                font-size: 16px;
+                width: 100px;
+              }
+              @include media (550) {
                 padding-right: 10px;
               }
             }
             @include media (1140) {
               overflow-y: scroll;
               padding: 20px;
-            
               &::-webkit-scrollbar-thumb {
                 background-color: rgba(234, 63, 29, 0.908); // Scrollni ushlovchi qismining rangi
-                border-radius: 10px;  // Scrollni yumaloqlashtiradi
-                  // Scrollni ushlovchi qismining chetiga oq rangli chegara qo'shadi
+                border-radius: 10px; 
               }
               &::-webkit-scrollbar-track {
                 background-color: floralwhite; // Scrollning orqa fon rangi
                 border-radius: 10px;
+                
+                
             }
+            &::-webkit-scrollbar {  
+                  width: 2px;
+            }
+            
                
           }
             
