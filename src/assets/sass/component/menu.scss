@@ -21,12 +21,15 @@
       position: relative;
       display: inline-block;
       margin-right: 50px;
-
+      
       &_span {
         font-size: 40px;
         cursor: pointer;
         color: #E55A46;
-
+        @include media (550){
+          font-size: 30px;
+          
+        }
         &_sp {
           position: absolute;
           top: -5px;
@@ -55,22 +58,59 @@
       row-gap: 20px;
       justify-content: start;
       margin-left: 50px;
+      @include media (770) {
+        margin-left: 35px;
+        gap: 10px;
+        display: flex;
+     } 
+      @include media (550) {
+        margin-left: 25px;
+        gap: 10px;
+        margin-left: 10px;
+        display: flex;
+     } 
     }
-
+    
     &_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       text-transform:capitalize;
       width: 250px;
-      height: 420px;
       margin-bottom: 40px;
       border-radius: 20px;
       box-shadow: 0 0 20px 5px rgb(179, 177, 177);
       position: relative;
-
+      a{
+        height: 200px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+      @include media (1000) {
+         width: 100%;
+         max-width: 250px;
+      } 
+      @include media (860) {
+         width: 200px;
+      } 
       img {
         width: 250px;
         height: 200px;
         z-index: 1;
         border-radius: 20px 20px 0px 0px;
+        @include media (1000) {
+          width: 100%;
+          max-width: 250px;
+          height: 100%;
+          max-height: 200px;
+        }
+        @include media (860) {
+            width: 200px;
+        }
       }
 
       &_price {
@@ -92,16 +132,29 @@
         padding-top: 10px;
         font-size: 22px;
         font-weight: 500;
+      @include media (1000) {
+        font-size: 20px;
+      } 
+      @include media (880) {
+        
       }
+    }
 
       &_text {
+        flex: 1;
         padding-top: 5px;
         margin-top: 10px;
         text-align: center;
         font-size: 18px;
         color: rgb(177, 118, 119);
         font-weight: 400;
-        height: 30px;
+        @include media (880) {
+          font-size: 16px;  // Matn o'lchamini kichraytirish
+          height: 50px;  // Ikki qatorga joylashadigan balandlik
+          line-height: 20px;  // Matn qatorining balandligini belgilash
+          max-height: 40px;  // Matnning maksimal balandligini belgilash (2 qator)
+          overflow-y: auto; 
+        }
       }
 
       &_btn {
@@ -117,6 +170,12 @@
         font-size: 17px;
         font-weight: 500;
         margin-bottom: 10px;
+        @include media (940) {
+              padding: 10px 15px;
+        }
+        @include media (880) {
+             margin-top: 20px;
+        }
       }
 
       .counter {
@@ -128,7 +187,12 @@
         padding: 5px;
         margin: 5px;
         margin-top: 43px;
-
+        @include media (880) {
+          margin-bottom: 5px;
+          margin-top: 0;
+          justify-content: center;
+          gap: 15px;
+      }
         .counter-btn {
           width: 40px;
           height: 40px;
@@ -138,7 +202,10 @@
           background-color: #f0f0f0;
           cursor: pointer;
           transition: background-color 0.2s;
-
+          @include media (880) {
+              width: 30px;
+              height: 30px;
+          }  
           &:hover {
             background-color: #e0e0e0;
           }
@@ -206,102 +273,80 @@
 
 
 
-// Responsive Styles for Different Screen Sizes
+// // Responsive Styles for Different Screen Sizes
 
-// 1440px and larger screens
-@include media(1440) {
-  .menu_box_cards {
-    column-gap: 40px;
-    row-gap: 20px;
-  }
+// // 1440px and larger screens
+// @include media(1440) {
+//   .menu_box_cards {
+//     column-gap: 40px;
+//     row-gap: 20px;
+//   }
+// }
 
-  .menu_box_card {
-    width: 250px;
-    height: 420px;
-  }
-}
+// // 1024px screens
+// @include media(1024) {
+//   .menu_box_cards {
+//     column-gap: 30px;
+//     row-gap: 20px;
+//   }
 
-// 1024px screens
-@include media(1024) {
-  .menu_box_cards {
-    column-gap: 30px;
-    row-gap: 20px;
-  }
-
-  .menu_box_card {
-    width: 250px;
-    height: 420px;
-  }
-}
-
-// 768px screens
-@include media(768) {
-  .menu_box_cards {
-    column-gap: 20px;
-    row-gap: 15px;
-    justify-content: center;
-  }
-
-  .menu_box_card {
-    width: 250px;
-    height: 420px;
-  }
   
-  .sidebar_box{
-    padding: 50px 11px;
-  }
-  .sidebar_box_ul_li{
-    width: 150px;
-  }
-}
+// }
 
-// 425px screens (small tablets or larger phones)
-@include media(425) {
-  .menu_box_cards {
-    column-gap: 15px;
-    row-gap: 10px;
-  }
+// // 768px screens
+// // @include media(768) {
+ 
 
-  .menu_box_card {
-    width: 180px;
-    height: 420px;
-  }
+// //   .menu_box_card {
+// //     width: 250px;
+// //     height: 420px;
+// //   }
+  
+// //   .sidebar_box{
+// //     padding: 50px 11px;
+// //   }
+// //   .sidebar_box_ul_li{
+// //     width: 150px;
+// //   }
+// // }
 
-  .menu_box_card_btn {
-    font-size: 14px;
-  }
-}
+// // 425px screens (small tablets or larger phones)
+// @include media(425) {
+//   .menu_box_cards {
+//     column-gap: 15px;
+//     row-gap: 10px;
+//   }
 
-// 375px screens (larger mobile devices)
-@include media(375) {
-  .menu_box_cards {
-    column-gap: 10px;
-    row-gap: 8px;
-  }
+//   .menu_box_card {
+//     width: 180px;
+//     height: 420px;
+//   }
 
-  .menu_box_card {
-    width: 160px;
-    height: 420px;
-  }
+//   .menu_box_card_btn {
+//     font-size: 14px;
+//   }
+// }
 
-  .menu_box_card_btn {
-    font-size: 13px;
-  }
-}
+// // 375px screens (larger mobile devices)
 
-// 320px screens (smallest phones)
-@include media(320) {
-  .menu_box_cards {
-    column-gap: 5px;
-    row-gap: 5px;
-  }
 
-  .menu_box_card {
-    width: 140px;
-    height: 420px;
-  }
 
-  .menu_box_card_btn {
-    font-size: 12px;
-  }
-}
+
+
+
+// // 320px screens (smallest phones)
+// @include media(320) {
+//   .menu_box_cards {
+//     column-gap: 5px;
+//     row-gap: 5px;
+//   }
+
+//   .menu_box_card {
+//     width: 140px;
+//     height: 420px;
+//   }
+
+//   .menu_box_card_btn {
+//     font-size: 12px;
+//   }
+// }

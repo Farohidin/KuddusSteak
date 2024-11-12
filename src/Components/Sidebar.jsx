@@ -17,7 +17,7 @@ const Sidebar = () => {
           <li><a href='#pizza' className="sidebar_box_ul_li">Pizzalar</a></li>
           <li><a href='#doner' className="sidebar_box_ul_li">Dönerler</a></li>
           <li><a href='#kebaplar' className="sidebar_box_ul_li">Kebaplar</a></li>
-          <li><a href='#tava' className="sidebar_box_ul_li">Tavada yemekler</a></li>
+          <li><a href='#tava' className="sidebar_box_ul_li">Tava yemekler</a></li>
           <li><a href='#shef' className="sidebar_box_ul_li">Şef yemekleri</a></li>
           <li><a href='#steak' className="sidebar_box_ul_li">Steakler</a></li>
           <li><a href='#tatli' className="sidebar_box_ul_li">Tatlılar</a></li>

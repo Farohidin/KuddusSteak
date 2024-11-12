@@ -15,6 +15,14 @@
     z-index: 99;
     padding: 30px 20px;
     margin-bottom: 40px;
+    @include media (880) {
+      font-size: 30px;   
+      padding: 20px 15px;     
+    }
+    @include media (550) {
+      font-size: 20px;   
+        
+    }
 }
 
 .product-added-message {
@@ -26,6 +34,10 @@
     padding-bottom: 10px;
     border-radius: 0 0 20px 20px;
     cursor: pointer;
+    @include media (860) {
+        margin-top: 20px;
+        padding-bottom: 20px;
+   }
 }
 
 .remove {

@@ -23,14 +23,14 @@ export const yemek = {
     salatalar: [ 
         { id: 16, name: "Çoban Salata", price: "49 000", description: "", imgSrc: "./salatalar/salat1.jpg" },
         { id: 17, name: "Buratto salat", price: "89 000", description: "", imgSrc: "./salatalar/salat2.jpg" },
-        { id: 18, name: "Çitir patlican salata", price: "89 000", description: "", imgSrc: "./salatalar/salat3.jpg" },
+        { id: 18, name: "Çitir patlican salata", price: "89 000", description: "", imgSrc: "./salatalar/salat3.JPG" },
         { id: 19, name: "Gavurdaği salata", price: "69 000", description: "", imgSrc: "./salatalar/salat4.jpg" },
         { id: 20, name: "Sezer salata", price: "69 000", description: "", imgSrc: "./salatalar/salat5.jpg" },
         { id: 21, name: "Çitir tavuklu salata", price: "89 000", description: "", imgSrc: "./salatalar/salat6.jpg" },
-        { id: 22, name: "Yapon salat", price: "79 000", description: "", imgSrc: "./salatalar/salat7.jpg" },
+        { id: 22, name: "Yapon salat", price: "79 000", description: "", imgSrc: "./salatalar/salat7.JPG" },
         { id: 23, name: "Gretiskiy salat", price: "69 000", description: "", imgSrc: "./salatalar/salat8.jpg" },
         { id: 24, name: "Mevsim salata", price: "55 000", description: "", imgSrc: "./salatalar/salat9.jpg" },
-        { id: 25, name: "Steak salata rukulalik", price: "119 000", description: "", imgSrc: "./salatalar/salat10.jpg" },
+        { id: 25, name: "Steak salata rukulalik", price: "119 000", description: "", imgSrc: "./salatalar/salat10.JPG" },
         { id: 26, name: "Rukula salata klassik", price: "69 000", description: "", imgSrc: "./salatalar/salat11.jpg" },
         { id: 27, name: "Tavuklu rukula salata", price: "79 000", description: "", imgSrc: "./salatalar/salat12.jpg" },
         { id: 28, name: "Qoziqorinlik rukula salata", price: "89 000", description: "", imgSrc: "./salatalar/salat14.jpg" },
@@ -53,7 +53,6 @@ export const yemek = {
         { id: 43, name: "Kaymakli balli fistikli pide", price: "99 000", description: "", imgSrc: "./pide/pide7.jpg" },
         { id: 44, name: "Antep Lahmacun", price: "35 000", description: "", imgSrc: "./pide/pide6.jpg" },
     ],
-    
     burger: [
         { id: 45, name: "Süper Bomba Döner", price: "149 000", description: "", imgSrc: "./pide/burger1.jpg" },
         { id: 46, name: "Kuddus burger", price: "99 000", description: "", imgSrc: "./pide/burger2.JPEG" },
@@ -67,7 +66,7 @@ export const yemek = {
         { id: 52, name: "feto chino", price: "99 000", description: "", imgSrc: "spagetti.jpg" },
         { id: 53, name: "steack spagetti", price: "149 000", description: "", imgSrc: "spagetti.jpg" },
     ],  
-   pizza: [
+    pizza: [
         { id: 54, name: "Istanbul pizza karişik", price: "119 000", description: "", imgSrc: "pizza.png" },
         { id: 55, name: "Nutellalı pizza", price: "149 000", description: "", imgSrc: "pizza.png" },
         { id: 56, name: "Pepperon pizza", price: "119 000", description: "", imgSrc: "pizza.png" },
@@ -126,7 +125,7 @@ export const yemek = {
         { id: 94, name: "Kare Baklava", price: "39 000", description: "", imgSrc: "./tatlilar/tatli3.jpg" },
         { id: 95, name: "Antep Baklava", price: "99 000", description: "", imgSrc: "./tatlilar/tatli4.jpg" },
         { id: 96, name: "Sarma Baklava", price: "49 000", description: "", imgSrc: "./tatlilar/tatli5.jpg" },
-        { id: 97, name: "Sutlaç", price: "49 000", description: "Sut guruch shakar", imgSrc: "./tatlilar/tatli6.jpg" },
+        { id: 97, name: "Sutlaç", price: "49 000", description: "Sut guruch shakar", imgSrc: "./tatlilar/tatli8.jpg" },
         { id: 98, name: "Antep Künefe", price: "89 000", description: "", imgSrc: "./tatlilar/tatli7.JPG" },
         { id: 99, name: "Fruktoviy Assorti", price: "249 000", description: "", imgSrc: "./tatlilar/fruk.JPG" },
     ],
@@ -136,7 +135,6 @@ export const yemek = {
         { id: 102, name: "Avğon Ekmek", price: "29 000", description: "", imgSrc: "./tatlilar/non2.JPG" },
         { id: 103, name: "Ekmek Pide Donasi", price: "6 000", description: "", imgSrc: "./tatlilar/non3.JPG" },
     ],
-        
     suv: [
         { id: 104, name: "Türk kahvesi", price: "29 000", description: "", imgSrc: "./suvlar/kahva1.jpg" },
         { id: 105, name: "Türk çayi bardak", price: "6 000", description: "", imgSrc: "./suvlar/choy.jpg" },

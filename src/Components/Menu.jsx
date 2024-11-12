@@ -46,7 +46,7 @@ const Menu = () => {
                   <span className="div_card_link_span_sp">{count}</span>
                </Link> */}
             </div>
-            <Shop openShop={openShop} />
+            <Shop openShop={openShop}  setOpenShop={setOpenShop}/>
 
             {categories.map(category => (
                <div key={category.id} id={category.id}>

@@ -18,16 +18,40 @@
         top: 0;
         bottom: 0;
         padding-right: 80px;
+        @include media (1000) {
+              padding-right: 50px;
+              padding-left: 50px;
+              padding-top:  40px;
+              row-gap: 10px;
+        }
+        @include media (940) {
+              padding-right: 40px;
+              padding-left: 40px;
+              padding-top:  30px;
+              row-gap: 10px;
+        }
+        @include media (740) {
+              padding-right: 30px;
+              padding-left: 30px;
+              padding-top:  30px;
+              row-gap: 10px;
+        }
+   
         &_img{
             width: 150px;
             border-radius: 50%;
             cursor: pointer;
+            @include media (900) {
+              width: 100%;
+              max-width: 150px;
+            } 
         }
         &_ul {
             display: flex;
             flex-direction: column;
             row-gap: 10px;
-          
+            border-radius: 20px;
+            
             &_li {
               cursor: pointer;
               font-size: 20px;
@@ -40,16 +64,35 @@
               background-color: #fff;
               color: chocolate;
               border-radius: 10px;
+              @include media (940) {
+                font-size: 18px;
+                padding: 5px 10px;
+                width: 150px;
+              }
+              @include media (500) {
+                padding-right: 10px;
+              }
             }
-          
-            // 1140px dan katta ekranda o'zgarish
-            @include media ( 1140px) {
-              flex-direction: row;
-              column-gap: 10px; // Gorizontal bo'shliq uchun
-              overflow-x: auto; // Skroll qo'shish
-              white-space: nowrap; // Elementlarni bir qatorda saqlash
+            @include media (1140) {
+              overflow-y: scroll;
+              padding: 20px;
+            
+              &::-webkit-scrollbar-thumb {
+                background-color: rgba(234, 63, 29, 0.908); // Scrollni ushlovchi qismining rangi
+                border-radius: 10px;  // Scrollni yumaloqlashtiradi
+                  // Scrollni ushlovchi qismining chetiga oq rangli chegara qo'shadi
+              }
+              &::-webkit-scrollbar-track {
+                background-color: floralwhite; // Scrollning orqa fon rangi
+                border-radius: 10px;
             }
+               
           }
+            
+          
+            
+         
           
     }
+}
 }

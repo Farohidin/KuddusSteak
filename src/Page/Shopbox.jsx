@@ -1,16 +1,15 @@
-import { useState } from "react"
 import "./basket.scss"
 import { MdDelete } from "react-icons/md";
 import ShopBoxCard from "../Components/ShopBoxCard";
+import { ImCross } from "react-icons/im";
 import { useSelector } from "react-redux";
 
-const Shopbox = () => {
+const Shopbox = ({ setOpenShop }) => {
     const shop = useSelector((state) => state.basket.value)
-    console.log(shop);
-
     return (
         <div className='shopbox'>
             <div className="container">
+                <a href="#" className="shopbox__icon" onClick={() => setOpenShop(false)} ><ImCross /></a>
                 {shop.map((item) => (
                     <ShopBoxCard item={item} key={item.id} />
                 ))}
