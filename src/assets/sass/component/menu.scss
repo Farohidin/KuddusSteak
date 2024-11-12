@@ -64,11 +64,12 @@
       @include media (770) {
         gap: 10px;
         display: flex;
-      margin-left: 10px;
+        margin-left: 10px;
      } 
       @include media (700) {
         display: grid;
         grid-template-columns: repeat(2, 1fr );
+        
      } 
       @include media (650) {
         display: flex;
@@ -100,8 +101,9 @@
         img{
           width: 100%;
           height: 100%;
+          max-height: 200px;
           object-fit: cover;
-          object-position: top;
+          
         }
       }
       @include media (1000) {
@@ -179,8 +181,10 @@
           font-size: 16px;  // Matn o'lchamini kichraytirish
           height: 50px;  // Ikki qatorga joylashadigan balandlik
           line-height: 20px;  // Matn qatorining balandligini belgilash
-          max-height: 40px;  // Matnning maksimal balandligini belgilash (2 qator)
-          overflow-y: auto; 
+          max-height: 40px;  // Matnning maksimal balandligini belgilash (2 qator) 
+          overflow-y: scroll;
+     
+          
           &::-webkit-scrollbar-thumb {
             background-color: rgba(234, 63, 29, 0.908); // Scrollni ushlovchi qismining rangi
           
