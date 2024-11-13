@@ -73,6 +73,7 @@
       @include media (650) {
         display: flex;
         flex-direction: column;
+        align-items: center;
      } 
       @include media (550) {
         margin-left: 25px;
