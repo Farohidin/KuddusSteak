@@ -9,7 +9,7 @@ const Shopbox = ({ setOpenShop }) => {
     return (
         <div className='shopbox'>
             <div className="container">
-                <a href="#" className="shopbox__icon" onClick={() => setOpenShop(false)} ><ImCross /></a>
+                <span className="shopbox__icon" onClick={() => setOpenShop(false)} ><ImCross /></span>
                 {shop.map((item) => (
                     <ShopBoxCard item={item} key={item.id} />
                 ))}

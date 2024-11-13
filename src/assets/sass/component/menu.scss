@@ -60,7 +60,6 @@
       column-gap: 30px;
       row-gap: 20px;
       justify-content: center;
-      align-items: center;
       @include media (770) {
         gap: 10px;
         display: flex;
@@ -89,11 +88,12 @@
       justify-content: space-between;
       text-transform:capitalize;
       width: 250px;
-      margin-bottom: 40px;
       border-radius: 20px;
       box-shadow: 0 0 20px 5px rgb(179, 177, 177);
       position: relative;
+      margin-bottom: 40px;
       a{
+        display: block; 
         height: 200px;
         @include media (700) {
           height: 115px;
